@@ -1,7 +1,25 @@
 package com.devotion.study.springboot;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 /**
- * Created by wugy on 2017/6/20 0020 20:29
+ * Created by wugy on 2017/6/20 20:29
  */
-public class SpringbootApp {
+@Controller
+@EnableAutoConfiguration
+public class SpringBootApp {
+
+    @RequestMapping("/")
+    @ResponseBody
+    String index() {
+        return "Hello world!";
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootApp.class, args);
+    }
 }
