@@ -7,11 +7,11 @@
     <groupId>com.devotion</groupId>
     <artifactId>framework-study</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>spring-study</module>
-    </modules>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>spring</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
